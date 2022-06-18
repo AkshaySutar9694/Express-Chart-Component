@@ -1,0 +1,152 @@
+@import "index";
+
+.chartMainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.chartRendererWrapper {
+  height: 12em;
+  margin: 0.4em;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.chartBarContainer {
+  margin: 0.35em;
+  width: 34px;
+  text-align: center;
+  transform: scaleY(-1);
+}
+
+.chartBarWrapper {
+  background-color: $primaryColor;
+  border-radius: 0.2em;
+  &:hover {
+    background-color: hsl(10, 80%, 73%);
+    cursor: pointer;
+  }
+
+  .chartBarToolTip {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    width: 3rem;
+    background-color: hsl(25, 47%, 15%);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    margin-left: -24px;
+    top: calc(100% + 6px);
+  }
+
+  &:hover .chartBarToolTip {
+    display: flex;
+  }
+}
+
+.chartBarWrapperSelected {
+  background-color: $accentColor;
+  border-radius: 0.2em;
+  &:hover {
+    background-color: $accentColor;
+    cursor: pointer;
+  }
+
+  .chartBarToolTipSelected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    width: 3rem;
+    background-color: hsl(25, 47%, 15%);
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+    left: 50%;
+    margin-left: -24px;
+    top: calc(100% + 6px);
+  }
+}
+
+.chartBarToolTipSelected {
+  transform: scaleY(-1);
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.barTitle {
+  transform: scaleY(-1);
+  font-size: 10px;
+  color: grey;
+  margin: 0.5em;
+}
+
+.chartBarLine {
+  width: 85%;
+  height: 1px;
+  border-top: solid 1px gray;
+  position: relative;
+  top: -10px;
+  filter: opacity(0.2);
+}
+
+.chartBarToolTip {
+  transform: scaleY(-1);
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.dataWrapper {
+  display: flex;
+  width: 19em;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em;
+}
+
+.totalValueWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.totalPercentageWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.totalValueLabel {
+  font-size: 10px;
+  color: hsl(28, 10%, 53%);
+}
+
+.totalValueData {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.percentageValue {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.percentageLabel {
+  color: hsl(28, 10%, 53%);
+  font-size: 12px;
+}

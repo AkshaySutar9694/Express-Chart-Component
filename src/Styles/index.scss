@@ -1,0 +1,15 @@
+$primaryColor: hsl(10, 79%, 65%);
+$accentColor: hsl(186, 34%, 60%);
+
+$backgroundColor: hsl(27, 66%, 92%);
+
+$commonBorderRadius: 15px;
+
+body {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: $backgroundColor;
+}

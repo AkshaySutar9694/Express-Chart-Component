@@ -1,0 +1,54 @@
+@import "index";
+
+$headerTextColor: white;
+
+.chartHeaderWrapper {
+  background: $primaryColor;
+  border-radius: $commonBorderRadius;
+  width: 22rem;
+  height: 12vh;
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerDataWrapper {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 80%;
+  width: auto;
+  margin-left: 20px;
+}
+
+.balnaceTitle {
+  color: $headerTextColor;
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.balanceData {
+  color: $headerTextColor;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -10px;
+}
+
+.imageWrapper {
+  height: 80%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.imageClass {
+  height: 3rem;
+  width: 3rem;
+}

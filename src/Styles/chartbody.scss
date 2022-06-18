@@ -1,0 +1,20 @@
+@import "index";
+
+.chartBodyWrapper {
+  background-color: white;
+  width: 22rem;
+  height: 60vh;
+  max-height: 380px;
+  margin: 0.5rem;
+  border-radius: $commonBorderRadius;
+}
+
+.chartHeaderTitle {
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  margin: 0.7em;
+  padding: 0.5em;
+  margin-bottom: 0.1em;
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f8e9dd;
+}
+
+.chartBodyWrapper {
+  background-color: white;
+  width: 22rem;
+  height: 60vh;
+  max-height: 380px;
+  margin: 0.5rem;
+  border-radius: 15px;
+}
+
+.chartHeaderTitle {
+  font-size: 20px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.7em;
+  padding: 0.5em;
+  margin-bottom: 0.1em;
+}
+/*# sourceMappingURL=chartbody.css.map */
